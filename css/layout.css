@@ -9,10 +9,15 @@ header{
     width:1200px;
     background-color: #ccc;
 } */
+main{
+    width:100%;
+    background-color:beige;
+}
 .slide{
     height:640px;
     background-color:rgb(145, 145, 145);
 }
+.con{width:1200px;margin:0px auto;}
 .con1{
     height:60px;
     background-color: rgb(61, 61, 61);
