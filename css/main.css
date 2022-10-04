@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+main{padding-top:120px;}
+
+.badges{
+    width:130px;
+    position:fixed;
+    right:5px;top:125px;
+    z-index:90;
+}
+.badges img{
+    border-radius:10px;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.2);
+}
+
+/* 비주얼 영역서식 */
+.visual{
+    height:646px;
+    background:url('../images/visual_bg.jpg');
+}
+.visual > h2{display:none;}
+.visual .inner{
+    width:1100px;
+    height:646px;
+    margin:0px auto;
+    position:relative;
+}
+.title, .cup1, .cup1_txt, .cup2, .cup2_txt, .spoon{
+    position:absolute;
+}
+.title{top:40px;left:-10px;}
+.cup1{bottom:0px;right:-47px;}
+.cup1_txt{top:40px;right:60px;}
+.cup2{bottom:0px;right:162px;}
+.cup2_txt{top:186px;right:412px;}
+.spoon{bottom:0px;left:275px;}
+
+.detail_btn{
+    width:130px;
+    padding:10px;
+    border:4px;
+    border:2px solid #333;
+    font-size:16px;
+    font-weight:700;
+    text-align:center;
+    display:block;
+    transition:0.4s;
+    color:#582b18;
+    transform:translateX(130px);
+    border-radius:3px;
+}
+.detail_btn:hover{
+    color:#fff;
+    background:#582b18;
+}
+.fadein{
+    /* display:none; 애니메이션 안 먹힘 */
+    opacity:0;
+}
