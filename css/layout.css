@@ -154,18 +154,8 @@ header .inner h1{
 
 
 
-.slide{
-    height:640px;
-    background-color:rgb(145, 145, 145);
-}
-.notice{
-    height:60px;
-    background-color: rgb(61, 61, 61);
-}
-.banner{
-    height:670px;
-    background:rgb(240, 240, 240);
-}
+
+
 .banner02{
     height:240px;
     background:rgb(75, 75, 75);
