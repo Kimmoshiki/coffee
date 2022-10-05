@@ -31,6 +31,8 @@
     <link href="./css/main.css" rel="stylesheet" type="text/css">
     <!-- 공통서식 -->
     <link href="./css/base.css" rel="stylesheet" type="text/css">
+    <!-- 스와이퍼슬라이드 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
 
     <!-- 벤더프리픽스 -->
     <script src="./script/prefixfree.min.js"></script>
@@ -306,7 +308,7 @@
     <main>
         <section class="visual">
             <h2>메인 비주얼 이미지</h2>
-            <div class="inner">
+            <div class="v_inner">
                 <div class="title fadein">
                 <img src="./images/visual_title.png" alt="">
                 <a href="#" title="자세히보기" class="detail_btn">자세히보기</a>
@@ -327,10 +329,63 @@
             </div>
         </section>
             <section class="notice">
-                <h2>공지사항</h2>
+                <div class="n_inner">
+                    <div class="n_inner__left">
+                        <h2>공지사항</h2>
+                        <div class="swiper snotice">
+                            <div class="swiper-wrapper">
+                              <div class="swiper-slide"><a href="javascript:void(0)" title="">크리스마스 &amp; 연말연시 매장 영업시간 변경안내</a></div>
+                              <div class="swiper-slide"><a href="javascript:void(0)" title="">[당첨자 발표] 커피 영수증 이벤트</a></div>
+                              <div class="swiper-slide"><a href="javascript:void(0)" title="">애플리케리션 버전 업데이트 안내</a></div>
+                              <div class="swiper-slide"><a href="javascript:void(0)" title="">[당첨자 발표] 전자영수증 이벤트</a></div>
+                            </div>
+                          </div>
+                          <i class="material-icons">
+                            add_circle
+                            </i>
+                    </div>
+                    <div class="n_inner__right">
+                        <h2>커피 프로모션</h2>
+                        <div class="toogle-promotion">
+                        <i class="material-icons">upload</i>
+                    </div>
+                    </div>
+                </div>
             </section>
-            <section class="banner">
-                <h2>제목1</h2>
+            <!-- 프로모션 -->
+            <section class="promotion">
+                <h2>프로모션</h2>
+                <div class="swiper proSlide">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <img src="./images/promotion_slide1.jpg" alt="">
+                        <a href="javascript:void(0)" title="프로모션1" class="pro_btn">자세히보기</a>
+                    </div>
+                      <div class="swiper-slide">
+                        <img src="./images/promotion_slide2.jpg" alt="">
+                        <a href="javascript:void(0)" title="프로모션2" class="pro_btn">자세히보기
+                        </a></div>
+                      <div class="swiper-slide">
+                        <img src="./images/promotion_slide3.jpg" alt="">
+                        <a href="javascript:void(0)" title="프로모션3" class="pro_btn">자세히보기
+                        </a></div>
+                      <div class="swiper-slide">
+                        <img src="./images/promotion_slide4.jpg" alt="">
+                        <a href="javascript:void(0)" title="프로모션4" class="pro_btn">자세히보기
+                        </a></div>
+                      <div class="swiper-slide">
+                        <img src="./images/promotion_slide5.jpg" alt="">
+                        <a href="javascript:void(0)" title="프로모션5" class="pro_btn">자세히보기
+                        </a></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev">
+                        <span class="material-icons">arrow_back</span>
+                    </div>
+                    <div class="swiper-button-next">
+                        <span class="material-icons">arrow_forward</span>
+                    </div>
+                  </div>
             </section>
             <section class="banner02">
                 <h2>배너2</h2>
@@ -364,5 +419,34 @@
     <footer>
         <nav class="lnb"></nav>
     </footer>
+
+    <!-- 스와이퍼 스크립트 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".snotice", {
+        direction: "vertical",
+        autoplay: true,
+        loop: true,
+      });
+      var swiper = new Swiper(".proSlide", {//객체 생성
+        slidesPerView: 3,//속성:값
+        spaceBetween: 10,//속성:값
+        centeredSlides:true,//1번 슬라이드가 중앙에 배치
+        loop: true,//반복회전
+        pagination: {
+          el: ".swiper-pagination",//컨트롤버튼 나오게
+          clickable: true,//컨트롤 버튼 클릭할 수 있음
+        },
+        autoplay:true,//자동으로 움직임
+        navigation: {//좌, 우 버튼 만들기
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+      
+      
+    </script>
 </body>
 </html>
