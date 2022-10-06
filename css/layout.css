@@ -156,30 +156,6 @@ header .inner h1{
 
 
 
-.banner02{
-    height:240px;
-    background:rgb(75, 75, 75);
-}
-.product{
-    height:700px;
-    background:rgb(192, 192, 192);
-}
-.con5{
-    height:400px;
-    background:rgb(48, 48, 48);
-}
-.con6{
-    height:400px;
-    background:rgb(75, 75, 75);
-}
-.con7{
-    height:700px;
-    background:rgb(199, 199, 199);
-}
-.con8{
-    height:1000px;
-    background:rgb(156, 156, 156);
-}
 footer{
     height:470px;
     background:#333;

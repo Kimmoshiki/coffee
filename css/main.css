@@ -35,21 +35,12 @@ main{padding-top:120px;}
 .cup2_txt{top:186px;right:412px;}
 .spoon{bottom:0px;left:275px;}
 
-.detail_btn{
-    width:130px;
-    padding:10px;
-    border:4px;
-    border:2px solid #333;
-    font-size:16px;
-    font-weight:700;
-    text-align:center;
-    display:block;
-    transition:0.4s;
+.visual .btn{
+    border:2px solid #582b18;
     color:#582b18;
     transform:translateX(130px);
-    border-radius:3px;
 }
-.detail_btn:hover{
+.visual .btn:hover{
     color:#fff;
     background:#582b18;
 }
@@ -146,14 +137,17 @@ main{padding-top:120px;}
     justify-content:center;
     overflow:hidden;
     position:relative;
+    transition:0.4s;
+    height:663px;
 }
+/* 버튼 클릭시 프로모션박스에 적용할 서식 */
+.hide{height:0px !important;}
 .promotion h2{display:none;}
 .proSlide{
     width:calc(819px * 3 + 10px * 2);/*2477*/
-    height:653px;
     flex-shrink:0;
     position:relative;
-    height:663px;
+    height:653px;
 }
 .proSlide .swiper{
     margin-left:auto;
@@ -170,10 +164,27 @@ main{padding-top:120px;}
 .proSlide .swiper-slide-active{
     opacity: 1;
 }
-.proSlide .pro_btn{
+.proSlide .btn{
     position:absolute;
     bottom:120px; left:0; right:0;
     margin:auto;
+}
+.btn{
+    width:130px;
+    padding:10px;
+    border:4px;
+    border:2px solid #333;
+    font-size:16px;
+    font-weight:700;
+    text-align:center;
+    display:block;
+    transition:0.4s;
+    color:#333;
+    border-radius:3px;
+}
+.btn:hover{
+    background:#333;
+    color:#fff
 }
 
 .proSlide .swiper-pagination{
@@ -215,20 +226,244 @@ main{padding-top:120px;}
     color:#fff;
 }
 .proSlide .swiper-button-prev::after, .proSlide .swiper-button-next::after{display:none;}
-.pro_btn{
-    width:130px;
-    padding:10px;
-    border:4px;
-    border:2px solid #333;
-    font-size:16px;
-    font-weight:700;
-    text-align:center;
-    display:block;
-    transition:0.4s;
-    color:#333;
-    border-radius:3px;
+
+
+/* 리워드 서식 */
+.reward{
+    height:241px;
+    background: rgb(39,39,39);
+    background: linear-gradient(90deg, rgba(39,39,39,1) 50%, rgba(213,199,152,1) 50%);
 }
-.pro_btn:hover{
-    background:#333;
-    color:#fff
+.reward_inner{
+    background-image:url('../images/rewards.jpg');
+    height:241px;
+    width:1100px;
+    margin:0px auto;
+    position:relative;
+}
+.btn_group{
+    position:absolute;
+    right:0px;
+    bottom:30px;
+    width:300px;
+}
+.gift{width:250px;}
+.btn_join{background:#333;color:#fff;}
+.btn_join:hover{color:#333;background:none;}
+.btn_join, .btn_login{
+    display:inline-block !important;
+    width:111px;
+    margin-bottom:10px;
+}
+
+/* 영상콘텐츠 서식 */
+.movie{
+    width:100%;
+    height:700px;
+    background:#222;
+    position:relative;
+}
+.movie .m_inner{
+    width:1100px;
+    height:700px;
+    margin:0px auto;
+    /* border:3px solid #ff0; */
+    position:relative;
+    z-index:12;
+}
+.movie .m_inner img{position:absolute;}
+
+/* 각 이미지의 위치지정 */
+.m_img1{
+    left:-60px;top:30px;
+    animation-name:m_ani01;
+    animation-duration:3s;
+}
+@keyframes m_ani01{
+    0%{top:60px;}
+    50%{top:40px;}
+    100%{top:60px;}
+}
+.m_img2{
+    left:40px;top:400px;
+    animation-name:m_ani02;
+    animation-duration:5s;
+}
+@keyframes m_ani02{
+    0%{top:420px;}
+    50%{top:440px;}
+    100%{top:420px;}
+}
+.m_img3{
+    right:0px;bottom:-60px;
+    animation-name:m_ani03;
+    animation-duration:4s;
+}
+
+@keyframes m_ani03{
+    0%{bottom:-30px;}
+    50%{bottom:-50px;}
+    100%{bottom:-30px;}
+}
+
+.m_img1, .m_img2, .m_img3{
+    animation-iteration-count:infinite;
+}
+.youtube{
+    width:1920px;
+    height:700px;
+    position:absolute;
+    top:0px;left:0px;
+    /* background:#ff0; */
+    z-index:10;
+    overflow:hidden;
+}
+.youtube video{
+    width:100%;
+}
+.cover{
+    position:absolute;
+    top:0px;left:0px;
+    width:100%;height:100%;
+    z-index:11;
+    background-image:url('../images/video_cover_pattern.png');
+}
+
+/* 아이스커피 블렌드 */
+.season-product{
+    background-image:url('../images/season_product_bg.jpg');
+    height:400px;
+}
+.season-product h2{display:none;}
+.inner{
+    width:1100px;
+    margin:0px auto;
+    /* border:3px solid #ff0; */
+    position:relative;
+}
+.season-product .coffee01{
+    position:absolute;
+}
+.season-product .txt_group{
+    position:absolute;
+    top:110px;
+    right:100px;
+    width:480px;
+}
+.season-product .c_title{
+    margin-bottom:10px;
+}
+.season-product .description{
+    margin-bottom:15px;
+}
+
+/* 리저브 커피 */
+.reserve-coffee{
+    background-image:url('../images/reserve_bg.jpg');
+}
+.reserve-coffee .inner{
+    height:400px;
+}
+.reserve-coffee .reserve-logo{
+    position:absolute;
+    top:110px;
+    left:0px;
+}
+.reserve-coffee .text-group{
+    position:absolute;
+    top:124px;
+    left:208px;
+}
+.reserve-coffee .product{
+    position:absolute;
+    top:0px;
+    right:0px;
+}
+.reserve-coffee .btn{
+    color:#D9AA8A;
+    border:2px solid #D9AA8A;
+}
+.reserve-coffee .btn:hover{
+    background-color:#D9AA8A;
+    color:#fff;
+}
+
+/* 좋아하는 커피 */
+.pick-your-favorite{
+    background-image:url('../images/favorite_bg.jpg');
+}
+.pick-your-favorite .inner{
+    padding:110px 0px;
+}
+.pick-your-favorite .text-group{
+    width:362px;
+    margin-left:100px;
+    display:flex;
+    justify-content:flex-end;
+    flex-wrap:wrap;
+}
+.pick-your-favorite .text-group .p_title{
+    margin-bottom:40px;
+}
+.pick-your-favorite .text-group .description{
+    margin-bottom:40px;
+}
+.pick-your-favorite .btn{
+    color:#fff;
+    border:2px solid #fff;
+}
+.pick-your-favorite .btn:hover{
+    color:#333;
+    background:#fff;
+}
+
+/* 스토어 */
+.reserve-store{
+    background-image: url('../images/reserve_store_bg.jpg');
+}
+.reserve-store .inner{
+    height:600px;
+}
+
+/* 매장안내 */
+.find-store{
+    background-image:url('../images/find_store_bg.jpg');
+}
+.find-store .inner{
+    height:400px;
+}
+.find-store .texture1{
+    position:absolute;
+    top:0px;
+    left:400px;
+}
+.find-store .texture2{
+    position:absolute;
+    bottom:0px;
+    right:0px;
+}
+.find-store .picture1{
+    border-radius:50%;
+    box-shadow:2px 2px 8px 0px rgba(0,0,0,.5);
+    position:absolute;
+    top:-60px;
+    left:0px;
+}
+.find-store .picture2{
+    border-radius:50%;
+    box-shadow: 2px 2px 8px 0px rgba(0,0,0,.5);
+    position:absolute;
+    top:150px;
+    left:250px;
+}
+.find-store .text-group{
+    position:absolute;
+    top:120px;
+    left:550px;
+}
+.find-store .text-group .f_title{
+    margin-bottom:20px
+}
+.find-store .text-group .description{
+    margin-bottom:20px
 }

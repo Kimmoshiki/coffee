@@ -306,12 +306,13 @@
     </header>
 
     <main>
+        <!-- 1. 메인 슬라이드 -->
         <section class="visual">
             <h2>메인 비주얼 이미지</h2>
             <div class="v_inner">
                 <div class="title fadein">
                 <img src="./images/visual_title.png" alt="">
-                <a href="#" title="자세히보기" class="detail_btn">자세히보기</a>
+                <a href="#" title="자세히보기" class="btn">자세히보기</a>
                 </div>
 
                 <div class="fadein">
@@ -328,6 +329,7 @@
                 </div>
             </div>
         </section>
+        <!-- 2. 공지사항 -->
             <section class="notice">
                 <div class="n_inner">
                     <div class="n_inner__left">
@@ -346,36 +348,34 @@
                     </div>
                     <div class="n_inner__right">
                         <h2>커피 프로모션</h2>
-                        <div class="toogle-promotion">
-                        <i class="material-icons">upload</i>
-                    </div>
+                        <i class="material-icons toggle_btn">upload</i>
                     </div>
                 </div>
             </section>
-            <!-- 프로모션 -->
+            <!-- 3. 프로모션 -->
             <section class="promotion">
                 <h2>프로모션</h2>
                 <div class="swiper proSlide">
                     <div class="swiper-wrapper">
                       <div class="swiper-slide">
                         <img src="./images/promotion_slide1.jpg" alt="">
-                        <a href="javascript:void(0)" title="프로모션1" class="pro_btn">자세히보기</a>
+                        <a href="javascript:void(0)" title="프로모션1" class="btn">자세히보기</a>
                     </div>
                       <div class="swiper-slide">
                         <img src="./images/promotion_slide2.jpg" alt="">
-                        <a href="javascript:void(0)" title="프로모션2" class="pro_btn">자세히보기
+                        <a href="javascript:void(0)" title="프로모션2" class="btn">자세히보기
                         </a></div>
                       <div class="swiper-slide">
                         <img src="./images/promotion_slide3.jpg" alt="">
-                        <a href="javascript:void(0)" title="프로모션3" class="pro_btn">자세히보기
+                        <a href="javascript:void(0)" title="프로모션3" class="btn">자세히보기
                         </a></div>
                       <div class="swiper-slide">
                         <img src="./images/promotion_slide4.jpg" alt="">
-                        <a href="javascript:void(0)" title="프로모션4" class="pro_btn">자세히보기
+                        <a href="javascript:void(0)" title="프로모션4" class="btn">자세히보기
                         </a></div>
                       <div class="swiper-slide">
                         <img src="./images/promotion_slide5.jpg" alt="">
-                        <a href="javascript:void(0)" title="프로모션5" class="pro_btn">자세히보기
+                        <a href="javascript:void(0)" title="프로모션5" class="btn">자세히보기
                         </a></div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -387,23 +387,90 @@
                     </div>
                   </div>
             </section>
-            <section class="banner02">
-                <h2>배너2</h2>
+            <!-- 4. 리워드 -->
+            <section class="reward">
+                <article class="reward_inner">
+                    <div class="btn_group">
+                    <a href="#" title="회원가입" class="btn btn_join">회원가입</a>
+                    <a href="#" title="로그인" class="btn btn_login">로그인</a>
+                    <a href="#" title="e-Gift 선물하기" class="btn gift">e-Gift 선물하기</a>
+                    </div>
+                </article>
             </section>
-            <section class="product">
-                <h2>배너3</h2>
+            <!-- 5. 유튜브 영상 콘텐츠 -->
+            <section class="movie">
+                <h2>영상콘텐츠</h2>
+                <article class="m_inner">
+                    <img src="./images/floating1.png" alt="이미지1" class="m_img1">
+                    <img src="./images/floating2.png" alt="이미지2" class="m_img2">
+                    <img src="./images/floating3.png" alt="이미지3" class="m_img3">
+                </article>
+                <div class="youtube">
+                    <video muted autoplay>
+                        <source src="./images/coffee.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <!-- 355에서 영상 zpi로 삽입하는 방법이 나와있음 -->
+
+                <div class="cover"></div>
             </section>
-            <section class="con5">
-                <h2>배너4</h2>
+            <!-- 6. 아이스커피 블렌드 -->
+            <section class="season-product scroll-spy">
+                <h2>아이스 커피브랜드</h2>
+                <article class="inner">
+                    <img src="./images/season_product_image.png" alt="시즌제품" class="cffee01">
+
+                    <div class="txt_group">
+                    <img src="./images/season_product_text1.png" alt="제목1" class="c_title">
+                    <img src="./images/season_product_text2.png" alt="제목2" class="description">
+                    <a href="#" title="자세히보기" class="btn">자세히 보기</a>
+                    </div>
+                </article>
             </section>
-            <section class="con6">
-                <h2>배너5</h2>
+            <!-- 7. 리저브 커피 -->
+            <section class="reserve-coffee">
+                <div class="inner">
+                    <img src="./images/reserve_logo.png" alt="" class="reserve-logo">
+                    <div class="text-group">
+                        <img src="./images/reserve_text.png" alt="" class="description">
+                        <div class="more">
+                            <a href="javascript:void(0)" title="자세히보기" class="btn">자세히보기</a>
+                        </div>
+                    </div>
+                    <img src="./images/reserve_image.png" alt="" class="product">
+                </div>
             </section>
-            <section class="con7">
-                <h2>배너6</h2>
+            <!-- 8. pick-favorite -->
+            <section class="pick-your-favorite">
+                <div class="inner">
+                    <div class="text-group">
+                        <img src="./images/favorite_text1.png" alt="" class="p_title">
+                        <img src="./images/favorite_text2.png" alt="" class="description">
+                        <div class="more">
+                            <a href="javascript:vild(0)" class="btn">자세히보기</a>
+                        </div>
+                    </div>
+                </div>
             </section>
-            <section class="con8">
-                <h2>배너7</h2>
+            <!-- 9. 스토어 -->
+            <section class="reserve-store">
+                <div class="inner"></div>
+            </section>
+            <!-- 10. 매장안내 -->
+            <section class="find-store">
+                <div class="inner">
+                    <img src="./images/find_store_texture1.png" alt="" class="texture1">
+                    <img src="./images/find_store_texture2.png" alt="" class="texture2">
+                    <img src="./images/find_store_picture1.jpg" alt="" class="picture1">
+                    <img src="./images/find_store_picture2.jpg" alt="" class="picture2">
+                    <div class="text-group">
+                        <img src="./images/find_store_text1.png" alt="" class="f_title">
+                        <img src="./images/find_store_text2.png" alt="" class="description">
+                        <div class="more">
+                            <a href="javascript:void(0)" class="btn">매장찾기</a>
+                        </div>
+                    </div>
+                </div>
             </section>
             <!-- 배너 배지 -->
             <aside class="badges">
