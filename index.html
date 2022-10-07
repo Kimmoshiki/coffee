@@ -36,12 +36,15 @@
 
     <!-- 벤더프리픽스 -->
     <script src="./script/prefixfree.min.js"></script>
-
     <!-- 부드러운 애니메이션 스크립트 소스 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
-
+    <!-- 스크롤 탑버튼 애니메이션 스크립트 소스 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollToPlugin.min.js"></script>
+    <!-- 스크롤 동작에 따른 애니메이션 스크립트 소스 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
     <!-- 메인 스크립트 -->
     <script src="./script/main.js" defer></script>
+
 </head>
 <body>
     <header>
@@ -418,35 +421,37 @@
             <section class="season-product scroll-spy">
                 <h2>아이스 커피브랜드</h2>
                 <article class="inner">
-                    <img src="./images/season_product_image.png" alt="시즌제품" class="cffee01">
+                    <img src="./images/season_product_image.png" alt="시즌제품" class="cffee01 back-to-position to-right">
 
                     <div class="txt_group">
-                    <img src="./images/season_product_text1.png" alt="제목1" class="c_title">
-                    <img src="./images/season_product_text2.png" alt="제목2" class="description">
+                    <img src="./images/season_product_text1.png" alt="제목1" class="c_title back-to-position to-left delay-1">
+                    <img src="./images/season_product_text2.png" alt="제목2" class="description back-to-position to-left delay-1">
+                    <div class="back-to-position to-left delay-3">
                     <a href="#" title="자세히보기" class="btn">자세히 보기</a>
+                    </div>
                     </div>
                 </article>
             </section>
             <!-- 7. 리저브 커피 -->
-            <section class="reserve-coffee">
+            <section class="reserve-coffee scroll-spy">
                 <div class="inner">
-                    <img src="./images/reserve_logo.png" alt="" class="reserve-logo">
+                    <img src="./images/reserve_logo.png" alt="" class="reserve-logo back-to-position to-right">
                     <div class="text-group">
-                        <img src="./images/reserve_text.png" alt="" class="description">
-                        <div class="more">
+                        <img src="./images/reserve_text.png" alt="" class="description back-to-position to-right delay-1">
+                        <div class="more back-to-position to-right delay-2">
                             <a href="javascript:void(0)" title="자세히보기" class="btn">자세히보기</a>
                         </div>
                     </div>
-                    <img src="./images/reserve_image.png" alt="" class="product">
+                    <img src="./images/reserve_image.png" alt="" class="product back-to-position to-left delay-3">
                 </div>
             </section>
             <!-- 8. pick-favorite -->
-            <section class="pick-your-favorite">
+            <section class="pick-your-favorite scroll-spy">
                 <div class="inner">
                     <div class="text-group">
-                        <img src="./images/favorite_text1.png" alt="" class="p_title">
-                        <img src="./images/favorite_text2.png" alt="" class="description">
-                        <div class="more">
+                        <img src="./images/favorite_text1.png" alt="" class="p_title back-to-position to-right">
+                        <img src="./images/favorite_text2.png" alt="" class="description back-to-position to-right delay-1">
+                        <div class="more back-to-position to-right delay-2">
                             <a href="javascript:vild(0)" class="btn">자세히보기</a>
                         </div>
                     </div>
@@ -454,19 +459,30 @@
             </section>
             <!-- 9. 스토어 -->
             <section class="reserve-store">
-                <div class="inner"></div>
+                <h2>리저브 스토어</h2>
+                <article class="inner">
+                    <div class="medal">
+                        <div class="front">
+                            <img src="./images/reserve_store_medal_front.png" alt="">
+                        </div>
+                        <div class="back">
+                            <img src="./images/reserve_store_medal_back.png" alt="">
+                            <a href="javascript:void(0)" class="btn">매장안내</a>
+                        </div>
+                    </div>
+                </article>
             </section>
             <!-- 10. 매장안내 -->
-            <section class="find-store">
+            <section class="find-store scroll-spy">
                 <div class="inner">
                     <img src="./images/find_store_texture1.png" alt="" class="texture1">
                     <img src="./images/find_store_texture2.png" alt="" class="texture2">
-                    <img src="./images/find_store_picture1.jpg" alt="" class="picture1">
-                    <img src="./images/find_store_picture2.jpg" alt="" class="picture2">
+                    <img src="./images/find_store_picture1.jpg" alt="" class="picture1 back-to-position to-right">
+                    <img src="./images/find_store_picture2.jpg" alt="" class="picture2 back-to-position to-right delay-1">
                     <div class="text-group">
-                        <img src="./images/find_store_text1.png" alt="" class="f_title">
-                        <img src="./images/find_store_text2.png" alt="" class="description">
-                        <div class="more">
+                        <img src="./images/find_store_text1.png" alt="" class="f_title back-to-position to-left">
+                        <img src="./images/find_store_text2.png" alt="" class="description back-to-position to-left delay-1">
+                        <div class="more back-to-position to-left delay-2">
                             <a href="javascript:void(0)" class="btn">매장찾기</a>
                         </div>
                     </div>
@@ -484,7 +500,61 @@
     </main>
 
     <footer>
-        <nav class="lnb"></nav>
+        <div class="top_btn">
+            <i class="material-icons">arrow_upward</i>
+        </div>
+        <section class="awards">
+            <div class="fslide_inner">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="./images/awards_slide1.jpg" alt="대통령 표창"></div>
+                        <div class="swiper-slide"><img src="./images/awards_slide2.jpg" alt="대통령 표창(3년 연속)"></div>
+                        <div class="swiper-slide"><img src="./images/awards_slide3.jpg" alt="우수사업주 인증"></div>
+                        <div class="swiper-slide"><img src="./images/awards_slide4.jpg" alt="경연대회 대상"></div>
+                        <div class="swiper-slide"><img src="./images/awards_slide5.jpg" alt="대한상의회장상"></div>
+                        <div class="swiper-slide"><img src="./images/awards_slide6.jpg" alt="기업사회공헌 활동 부문"></div>
+                        <div class="swiper-slide"><img src="./images/awards_slide7.jpg" alt="KSL 1위(5년 연속)"></div>
+                        <div class="swiper-slide"><img src="./images/awards_slide8.jpg" alt="KS-SQI 1위(5년 연속)"></div>
+                        <div class="swiper-slide"><img src="./images/awards_slide9.jpg" alt="커피전문점 부문(4년 연속)"></div>
+                        <div class="swiper-slide"><img src="./images/awards_slide10.jpg" alt="동반성장 부문(4년 연속)"></div>
+                </div>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="material-icons">arrow_back</i>
+            </div>
+            <div class="swiper-button-next">
+                <i class="material-icons">arrow_forward</i>
+            </div>
+            </div>
+        </section>
+        <div class="f_box">
+        <div class="f_inner">
+            <ul class="menu">
+                <li><a href="javascript:void(0)" class="orange">개인정보처리방침</a></li>
+                <li><a href="javascript:void(0)">영상정보처리기기 운영관리 방침</a></li>
+                <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
+                <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
+                <li><a href="javascript:void(0)">카드 이용약관</a></li>
+                <li><a href="javascript:void(0)">윤리경영 핫라인</a></li>
+            </ul>
+        <div class="btn-group">
+            <a href="javascript:void(0)" class="btn">찾아오시는 길</a>
+            <a href="javascript:void(0)" class="btn">신규입점제의</a>
+            <a href="javascript:void(0)" class="btn">사이트 맵</a>
+        </div>
+        <div class="info">
+            <span>사업자등록번호 123-45-678901</span>
+            <span>(주)헤로피커피 코리아</span>
+            <span>TEL : 02) 1234-5678 / FAX : 02) 1234-5678</span>
+            <span>개인정보 책임자 : 빅영웅</span>
+        </div>
+        <p class="copyright">
+            &copy;<span class="this-year"></span>
+            Heropy Coffee Company. All Rights Reserved
+        </p>
+        <img src="./images/logo_text.png" alt="" class="logo">
+        </div>
+        </div>
     </footer>
 
     <!-- 스와이퍼 스크립트 -->
@@ -512,7 +582,16 @@
           prevEl: ".swiper-button-prev",
         },
       });
-      
+      var swuper = new Swiper(".awards .swiper",{
+        autoplay:true,
+        loop:true,
+        spaceBetween:30,
+        slidesPerView:5,
+        navigation: {//좌, 우 버튼 만들기
+          nextEl: ".awards .swiper-button-next",
+          prevEl: ".awards .swiper-button-prev"
+        },
+      });
       
     </script>
 </body>
