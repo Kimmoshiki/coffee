@@ -100,25 +100,25 @@ main{padding-top:120px;overflow-x:hidden;}
     height: 62px;
   }
 
-  .snotice .swiper-slide {
+  /* .snotice .swiper-slide {
     text-align: center;
     font-size: 18px;
-    transform:translateY(-2px);
+    transform:translateY(-2px); */
 
     /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
+    /* display: -webkit-box;
+    display: -ms-flexbox; */
     /* display: -webkit-flex; */
     /* display: flex; */
     /* -webkit-box-pack: center; */
-    -ms-flex-pack: center;
+    /* -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-  }
+  } */
   .snotice .swiper-slide a{
     color:#fff;
     font-size:14px;
@@ -160,7 +160,7 @@ main{padding-top:120px;overflow-x:hidden;}
     text-align:center;
     position:relative;
     opacity:.5;
-    transform:opacity 1s;
+    /* transform:opacity 1s; */
 }
 .proSlide .swiper-slide-active{
     opacity: 1;
