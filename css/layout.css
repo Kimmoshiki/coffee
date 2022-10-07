@@ -180,6 +180,7 @@ footer .top_btn i{
 }
 /* 푸터 슬라이드 */
 .awards{background:#272727;;}
+.awards h2{display:none;}
 .awards .fslide_inner{
     width:1100px;
     padding:40px 0px;
